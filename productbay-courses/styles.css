@@ -3529,3 +3529,23 @@
       a.pbc-lesson-card:hover { transform: none; }
       a.pbc-lesson-card:hover .pbc-lesson-arrow { transform: none; }
     }
+
+/* Mobile Menu Styles (migrated from JS) */
+@media (max-width: 1024px) { 
+  .nav-links.open { 
+    display: flex !important; 
+    position: absolute; 
+    top: 100%; 
+    left: 0; 
+    right: 0; 
+    flex-direction: column; 
+    background: #fff; 
+    border-bottom: 1px solid var(--border); 
+    padding: 16px 24px 20px; 
+    align-items: flex-start; 
+    gap: 4px; 
+    box-shadow: 0 12px 24px rgba(0,31,63,0.06); 
+  } 
+  .nav-links.open li { width: 100%; } 
+  .nav-links.open li a { display: block; padding: 12px 0; width: 100%; } 
+}
